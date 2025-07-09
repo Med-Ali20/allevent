@@ -19,19 +19,19 @@ const Footer = () => {
           <h3 className="font-bold text-[1.6rem] lg:text-[0.8rem] mb-[2rem]">
             Allevent
           </h3>
-          <p className="font-light text-outfit text-[1.6rem] lg:text-[0.8rem]">
+          <p className="font-light font-outfit text-[1.6rem] lg:text-[0.8rem]">
             P.O. Box 145111
           </p>
-          <p className="font-light text-outfit text-[1.6rem] lg:text-[0.8rem]">
+          <p className="font-light font-outfit text-[1.6rem] lg:text-[0.8rem]">
             Riyadh 4545
           </p>
-          <p className="font-light text-outfit text-[1.6rem] lg:text-[0.8rem]">
+          <p className="font-light font-outfit text-[1.6rem] lg:text-[0.8rem]">
             Saudi Arabia
           </p>
-          <p className="font-light text-outfit text-[1.6rem] lg:text-[0.8rem]">
+          <p className="font-light font-outfit text-[1.6rem] lg:text-[0.8rem]">
             info@allevent.com.sa
           </p>
-          <p className="font-light text-outfit text-[1.6rem] lg:text-[0.8rem]">
+          <p className="font-light font-outfit text-[1.6rem] lg:text-[0.8rem]">
             +966555363676
           </p>
           <h2 className="text-[1.6rem] lg:text-[0.8rem] font-bold my-[2rem] lg:hidden">
@@ -58,7 +58,7 @@ const Footer = () => {
               </a>
             </li>
             <li className="mx-3">
-              <a href="https://linkedin.com">
+              <a href="https://www.linkedin.com/company/alleventksa">
                 <img src="/icons/linkedin.svg" alt="instagram" />
               </a>
             </li>
@@ -71,17 +71,17 @@ const Footer = () => {
         </div>
         <ul className="flex lg:hidden items-center text-white mb-[3rem] border-b-1 border-[#9C9C9C] w-[80%] justify-center py-[4rem]">
           <li className="mr-3 ml-[1.8rem]">
-            <a href="https://instagram.com">
+            <a href="https://www.instagram.com/allevent_ksa/" target="_blank" rel="noopener noreferrer">
               <img src="/icons/instagram.svg" alt="instagram" />
             </a>
           </li>
           <li className="mx-3">
-            <a href="https://linkedin.com">
+            <a href="https://www.linkedin.com/company/alleventksa" target="_blank" rel="noopener noreferrer">
               <img src="/icons/linkedin.svg" alt="instagram" />
             </a>
           </li>
           <li className="ml-3">
-            <a href="https://instagram.com">
+            <a href="https://wa.me/+966555363676" target="_blank" rel="noopener noreferrer">
               <img src="/icons/whatsapp.svg" alt="instagram" />
             </a>
           </li>

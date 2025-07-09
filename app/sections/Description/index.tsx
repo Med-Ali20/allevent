@@ -16,7 +16,7 @@ const index: React.FC<Props> = ({ className }) => {
         all!
       </h2>
       <img src="/images/1.jpg" alt="allevent" className="my-[3rem]" />
-      <p className="text-[1.25rem] md:text-[1.3rem] text-outfit">
+      <p className="text-[1.25rem] md:text-[1.3rem] font-outfit">
         We deliver events with unmatched attention to detail, innovative
         concepts, and flawless execution through every touchpoint. Every element
         is precisely tailored to reflect your brand and vision, resulting in a

@@ -3,7 +3,7 @@ import React from "react";
 
 const EveryMomentMatters = () => {
   return (
-    <div className="bg-primary w-full flex flex-col items-center px-[1.5rem] py-[2rem] relative lg:-mt-[10vw]">
+    <div className="bg-primary w-full flex flex-col items-center px-[1.5rem] py-[2rem] relative mt-[6rem] lg:-mt-[10vw]">
       <h1 className="text-white font-bold text-[2.5rem] text-center mb-[1rem] flex items-center justify-center z-10">
         Every Moment{" "}
         <span className="text-black ml-[8px] font-bold text-[2.5rem]">
@@ -11,7 +11,7 @@ const EveryMomentMatters = () => {
         </span>
       </h1>
       <p
-        className="text-outfit text-[1.6rem] text-white leading-[2rem] mb-[2rem] font-light text-center lg:max-w-[60%] lg:text-[1.1rem] lg:leading-[1.3] z-10"
+        className="font-outfit text-[1.6rem] text-white leading-[2rem] mb-[2rem] font-light text-center lg:max-w-[60%] lg:text-[1.1rem] lg:leading-[1.3] z-10"
         style={{ fontWeight: 300 }}
       >
         We create events that are memorable for all the right reasons. Connect
