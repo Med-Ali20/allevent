@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "@/app/ui/link";
+import Language from '@/app/components/language'
 
 type Props = {
   setShowMenu: any;
@@ -49,6 +50,9 @@ const Header: React.FC<Props> = ({ setShowMenu }) => {
       <img src="/icons/burger-icon.svg" alt="menu" onClick={() => setShowMenu(true)} className="lg:hidden cursor-pointer" />
       <nav className="hidden lg:block">
         <ul className="flex items-center text-white">
+          <li className="mx-[1.8rem]">
+            <Language />
+          </li>
           <li className="mx-[1.8rem]">
             <a href="/services"> Services </a>
           </li>

@@ -7,7 +7,7 @@ import { outfit, montserrat } from "./font";
 //@ts-ignore
 import Header from "./components/layout/Header";
 import "./globals.css";
-
+import { LanguageProvider } from "./contexts/LanguageContext";
 import Footer from "./sections/footer";
 import Menu from "./components/menu";
 
@@ -25,12 +25,14 @@ export default function RootLayout({
 
   return (
     <html lang="en" className={`${outfit.variable} ${montserrat.variable}`}>
-      <body className="bg-dark relative">
-        <Header setShowMenu={setShowMenu} />
-        <Menu showMenu={showMenu} setShowMenu={setShowMenu} />
-        {children}
-        <Footer />
-      </body>
+      <LanguageProvider>
+        <body className="bg-dark relative">
+          <Header setShowMenu={setShowMenu} />
+          <Menu showMenu={showMenu} setShowMenu={setShowMenu} />
+          {children}
+          <Footer />
+        </body>
+      </LanguageProvider>
     </html>
   );
 }
