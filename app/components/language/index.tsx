@@ -7,7 +7,7 @@ export default function HomePage() {
   const t = translations[locale]
   
   return (
-    <div>
+    <div className='text-white mr-[4rem] lg:-mr-[2rem]'>
       <select value={locale} onChange={(e) => setLocale(e.target.value)}>
         <option value="en">English</option>
         <option value="ar">العربية</option>

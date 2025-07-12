@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "@/app/ui/link";
-import Language from '@/app/components/language'
+import Language from "@/app/components/language";
 
 type Props = {
   setShowMenu: any;
@@ -47,12 +47,16 @@ const Header: React.FC<Props> = ({ setShowMenu }) => {
           alt="allevent"
         />
       </a>
-      <img src="/icons/burger-icon.svg" alt="menu" onClick={() => setShowMenu(true)} className="lg:hidden cursor-pointer" />
+      <Language />
+      <img
+        src="/icons/burger-icon.svg"
+        alt="menu"
+        onClick={() => setShowMenu(true)}
+        className="lg:hidden cursor-pointer"
+      />
       <nav className="hidden lg:block">
         <ul className="flex items-center text-white">
-          <li className="mx-[1.8rem]">
-            <Language />
-          </li>
+          <li className="mx-[1.8rem]"></li>
           <li className="mx-[1.8rem]">
             <a href="/services"> Services </a>
           </li>
@@ -60,17 +64,29 @@ const Header: React.FC<Props> = ({ setShowMenu }) => {
             <Link color="white" text="Let's talk" href="/contact" />
           </li>
           <li className="mr-3 ml-[1.8rem]">
-            <a href="https://www.instagram.com/allevent_ksa/" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://www.instagram.com/allevent_ksa/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <img src="/icons/instagram.svg" alt="instagram" />
             </a>
           </li>
           <li className="mx-3">
-            <a href="https://www.linkedin.com/company/alleventksa" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://www.linkedin.com/company/alleventksa"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <img src="/icons/linkedin.svg" alt="instagram" />
             </a>
           </li>
           <li className="ml-3">
-            <a href="https://wa.me/+966555363676" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://wa.me/+966555363676"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <img src="/icons/whatsapp.svg" alt="instagram" />
             </a>
           </li>

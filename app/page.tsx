@@ -8,8 +8,7 @@ import About from "./sections/About-us";
 import Values from "./sections/Values";
 import { ParallaxProvider } from "react-scroll-parallax";
 import EveryMomentMatters from "./sections/EveryMomentMatters";
-import Menu from '@/app/components/menu'
-
+import Menu from "@/app/components/menu";
 
 export default function Home() {
   return (
@@ -19,9 +18,16 @@ export default function Home() {
         <div className="w-full grid grid-cols-1 lg:grid-cols-4">
           <div className="col-span-[1] hidden lg:block relative">
             <img
+              src="/icons/circles.svg"
+              srcSet="/icons/circles.svg 385w, /icons/circles-mobile.svg 174w"
+              sizes="(max-width: 1024px) 174px, 385px"
+              className="absolute -left-[6%] top-50 lg:left-[0] lg:top-70 z-20 rotate-[180deg]"
+              alt=""
+            />
+            <img
               src="/icons/circles-red.svg"
               alt=""
-              className="hidden lg:block absolute top-[20rem] left-[6rem] w-[4rem]"
+              className="hidden lg:block absolute top-215 left-[6rem] w-[4rem]"
             />
           </div>
           <Description className="col-span-[3]" />
