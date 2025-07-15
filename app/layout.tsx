@@ -25,6 +25,9 @@ export default function RootLayout({
 
   return (
     <html lang="en" className={`${outfit.variable} ${montserrat.variable}`}>
+      <head>
+        <title>Allevent</title>
+      </head>
       <LanguageProvider>
         <body className="bg-dark relative">
           <Header setShowMenu={setShowMenu} />

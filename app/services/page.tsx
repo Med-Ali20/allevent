@@ -26,29 +26,36 @@ const Services = () => {
 
   //@ts-ignore
   const t = translations[locale];
-  console.log(locale);
 
   return (
     <div className="text-white min-h-[100vh] pt-[10rem] pl-[2rem] lg:max-w-[70vw] mx-auto">
-      <div className="w-full flex flex-col items-center mb-4">
-        <div className="mb-[4rem]">
-          <h1 className="text-[4rem] lg:text-[3.5rem] leading-none mb-4 lg:mb-0">
-            Innovative <br className="lg:hidden" /> Concepts{" "}
-            <span className="text-primary -ml-[0.8rem] leading-none ">.</span>{" "}
-            <br className="" /> Flawless <br className="lg:hidden" /> Execution{" "}
-            <span className="text-secondary -ml-[0.8rem] leading-none ">.</span>
-          </h1>
+      <div className="w-full flex flex-col  mb-4">
+        <div className="mb-[4rem] flex flex-col pr-5">
+          {locale === "en" ? (
+            <h1 className="text-[4rem] lg:text-[3.5rem] leading-none mb-4 lg:mb-0">
+              <br className="lg:hidden" /> Concepts{" "}
+              <span className="text-primary -ml-[0.8rem] leading-none ">.</span>{" "}
+              <br className="" /> Flawless <br className="lg:hidden" />{" "}
+              Execution{" "}
+              <span className="text-secondary -ml-[0.8rem] leading-none ">
+                .
+              </span>
+            </h1>
+          ) : (
+            <h1 className="text-[4rem] lg:text-[3.5rem] text-right font-[zain] leading-none mb-4 lg:mb-0">
+              .ابتكار المفاهيم وتنفيذها باحترافية
+            </h1>
+          )}
 
-          <p className="whitespace-pre-line my-[3rem] lg:mt-[2rem] lg:mb-[3rem] text-[2rem] lg:text-[1.5rem] w-[80%] lg:w-full leading-[2.4rem] font-outfit font-light">
+          <p className={`whitespace-pre-line my-[3rem]  text-[2rem] lg:text-[1.5rem] lg:w-full leading-[2.4rem] font-light ${locale === 'ar' ? 'font-[zain] text-right lg:mt-[0] lg:mb-[2rem] w-full' : 'font-outfit lg:mt-[2rem] lg:mb-[3rem] w-[80%] '}`}>
             {t.services.intro}
           </p>
 
-          <Link color="white" bg="#FF002C" text="Get in Touch" href="#" />
+          <Link color="white" bg="#FF002C" text={`${locale === 'ar' ? 'تواصل معنا' : 'Get in Touch'}`} href="/contact" className={`${locale === 'ar' ? 'ml-auto' : 'mr-auto'}`} />
         </div>
 
         {servicesKeys.map((key, index) => {
           const iconNumber = (index + 1).toString().padStart(2, "0");
-          console.log(iconNumber);
 
           return (
             <div
@@ -72,14 +79,16 @@ const Services = () => {
               >
                 <h2
                   className={`text-[2.3rem] font-bold w-fit ${
-                    locale === "ar" ? "text-right" : ""
+                    locale === "ar" ? "text-right font-[zain]" : "font-outfit"
                   } w-full`}
                 >
                   {t.services[key].title}
                 </h2>
                 <p
-                  className={`text-[1.1rem] font-outfit my-[1rem] flex lg:w-[85%] text-left ${
-                    locale === "ar" ? "text-right" : ""
+                  className={`text-[1.1rem] my-[1rem] flex  ${
+                    locale === "ar"
+                      ? "text-right font-[zain]"
+                      : "text-left font-outfit"
                   } w-full`}
                 >
                   {t.services[key].description}
@@ -88,7 +97,9 @@ const Services = () => {
                 <AnimatePresence initial={false}>
                   {openService === key && (
                     <motion.ul
-                      className="list-disc list-inside text-[1rem] font-outfit lg:w-[85%] ml-4 overflow-hidden"
+                      className={`text-[1rem] lg:w-[85%] ml-4 overflow-hidden ${
+                        locale === "ar" ? "font-[zain]" : "font-outfit"
+                      }`}
                       initial={{ height: 0, opacity: 0 }}
                       animate={{ height: "auto", opacity: 1 }}
                       exit={{ height: 0, opacity: 0 }}
@@ -103,10 +114,10 @@ const Services = () => {
               </div>
 
               {/* Fixed-position toggle button */}
-              <div className="relative flex items-start justify-end">
+              <div className="relative flex items-start justify-end pr-5">
                 <button
                   onClick={() => toggleService(key)}
-                  className="absolute top-0 right-0 p-2 text-white"
+                  className="absolute top-0 right-0 p-2 text-white  border-1 border-[#FF002C] rounded-full mr-5"
                   aria-label={`Toggle ${t.services[key].title}`}
                 >
                   {openService === key ? (

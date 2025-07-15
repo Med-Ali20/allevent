@@ -1,5 +1,77 @@
 export const translations = {
   en: {
+    homepage: {
+      impressions:
+        "Allevent transforms ideas into unforgettable, immersive experiences that leave a lasting impression.",
+      ideation:
+        "From event ideation to complete execution.. Our creative team does it all!",
+      attention:
+        "We deliver events with unmatched attention to detail, innovative concepts, and flawless execution through every touchpoint. Every element is precisely tailored to reflect your brand and vision, resulting in a guest experience beyond compare.",
+      passion:
+        "Our passion for precision shines through in our commitment to excellence. Our experience, insight, and transparency ensure a seamless experience through every touchpoint, ensuring every decision is aligned with your event goals.",
+      services: {
+        eventManagement: "Event Management",
+        eventManagementDescription:
+          "Full-service event management from concept to closing. Working closely with your team, we ensure flawless execution through every touchpoint.",
+        eventRegisteration: "Event Registration",
+        eventRegisterationDescription:
+          "From branded digital platforms to check-in systems and on-site support, Allevent ensures seamless registration, check-in, and credentialing.",
+        branding: "Branding, Visual Identity, Event Design",
+        brandingDescription:
+          "Keeping your brand top-of-mind with your guests, we offer end-to-end visual identity to ensure a cohesive guest experience.",
+        concept: "Concept Development",
+        conceptDescription:
+          "Working closely with your team, we transform ideas into impactful themes and unforgettable event experiences.",
+        production: "Production Management",
+        productionDescription:
+          "We provide technical production support, stage design, and show running for conferences, trade shows, launches, and more.",
+        crowd: "Crowd Control",
+        crowdDescription:
+          "Enjoy a safe, secure, enjoyable, and frictionless experience for event guests, VIPs, and all stakeholders.",
+      },
+      coreValues: {
+        title: "Our Core Values",
+        values: [
+          {
+            title: "Excellence",
+            description:
+              "Delivering the highest standards in every detail, from concept to completion.",
+          },
+          {
+            title: "Client-Centricity",
+            description:
+              "We listen, adapt, and tailor our services to meet or exceed each client's unique vision and goals.",
+          },
+          {
+            title: "Creativity",
+            description:
+              "We thrive on bold ideas and outside-the-box thinking to fuel unforgettable experiences.",
+          },
+          {
+            title: "Innovation",
+            description:
+              "Embracing change, we apply next-level tools, technology, and trends to elevate every event.",
+          },
+        ],
+        closingNote: "Every moment matters.",
+        closingNoteText:
+          " We create events that are memorable for all the right reasons. Connect with us today to get started. We’d love to hear about your ideas and show you how we can bring them to life.",
+      },
+
+      about: {
+        aboutTitle: "About Us",
+        aboutDescription:
+          "Allevent is an elite creative event services agency serving Saudi Arabia and the Middle East. Inspired by precision, our mission is to deliver events that lead the way in innovative design, strategic planning, and seamless execution at the highest standards of our industry. Working closely with our clients, we transform ideas into reality, setting the paradigm for excellence in everything we do. From concept development to event design, production management, and crowd control, we transform ideas into unforgettable experiences.",
+
+        missionTitle: "Our Mission",
+        missionDescription:
+          "To orchestrate extraordinary, high-impact events that fuse creativity with elegance, leaving a lasting mark on every audience we touch.",
+
+        visionTitle: "Our Vision",
+        visionDescription:
+          "To be the leading force in redefining the standard for elite event experiences in Saudi Arabia and the Middle East, transforming ideas into inspiring moments that leave lasting impressions.",
+      },
+    },
     policy: "Privacy Policy",
     consent:
       'Your consent and approval to this privacy policy ("Policy") is deemed effective upon your first use of this website. allevent, at its sole discretion, may amend this Policy with immediate effect, and your consent and approval to such amendments are deemed upon your continuous use of the website.',
@@ -116,14 +188,14 @@ P.O. Box 145111
 Riyadh 4545
 Saudi Arabia
 Email: info@allevent.com.sa
-Phone: 0555363676`,
+Phone: `,
 
     contact: {
       title: "Contact",
       description:
         "To inquire about event services and availability, please get in touch. We’d love to learn more about your event and show you how we can make it unforgettable!",
       email: "info@allevent.com.sa",
-      phone: "0555363676",
+      phone: "+966555363676",
       requestQuote: "Request a quote",
       name: "Name*",
       phoneLabel: "Phone*",
@@ -219,6 +291,81 @@ Phone: 0555363676`,
     },
   },
   ar: {
+    homepage: {
+      impressions: ",نُبدع في تحويل الأفكار إلى تجارب استثنائية لا تُنسى،",
+      ideation:
+        "تترك انطباعًا مميزًا من لحظة التخطيط وحتى التنفيذ، حيث يتولى فريقنا الإبداعي كل التفاصيل باحترافية.",
+      attention:
+        ".نُنفّذ فعالياتنا بكل دقة، وبأفكار مبتكرة، وتنفيذ احترافي يعتني بأدق التفاصيل. نحرص على تصميم كل جانب من جوانب الفعالية لنمنحكم تجربة لا تُنسى",
+      passion:
+        ".نحرص على الدقة في كل ما نقوم به، لأننا نؤمن بأن التميّز يبدأ من التفاصيل. تضمن خبرتنا ورؤيتنا المتكاملة تجربة سلسة في كل تفاصيل الفعالية",
+      services: {
+        eventManagement: "إدارة الفعاليات",
+        eventManagementDescription:
+          "إدارة فعاليات متكاملة من الفكرة حتى التنفيذ الكامل. نعمل معكم لضمان تنفيذ مثالي في كل مرحلة من مراحل الفعالية.",
+
+        eventRegisteration: "تسجيل الفعاليات",
+        eventRegisterationDescription:
+          "من المنصات الرقمية المتكاملة إلى أنظمة التسجيل والدخول، نوفّر تجربة سهلة ومنظمة، تضمن وصولًا سريعًا وسلسًا لكل المشاركين.",
+
+        branding: "ابتكار وتطوير العلامة التجارية والهوية البصرية للفعاليات",
+        brandingDescription:
+          "نصمّم هوية بصرية متكاملة متوافقة مع علامتك التجارية تبقى في الذاكرة وتثري تجربة الزوار.",
+
+        concept: "صياغة الأفكار الإبداعية",
+        conceptDescription:
+          "نبتكر الأفكار الإبداعية التي تشكّل الأساس لكل تجربة، ونحوّلها إلى رحلة متكاملة تنبض بالتفاصيل الملهمة. من الفكرة وأقتراح مفاهيم مبتكرة ومميزة تواكب رؤية العميل، إلى تنفيذ يُجسّدها باحترافية.",
+
+        production: "إدارة الإنتاج",
+        productionDescription:
+          "نقدّم الدعم الفني للإنتاج، وتصميم المسرح، وإدارة العروض في المؤتمرات، والمعارض، وفعاليات التدشين، وغيرها من المناسبات التي تتطلب تنفيذًا احترافيًا وتجربة حضور متكاملة.",
+
+        crowd: "إدارة الحشود",
+        crowdDescription:
+          "نوفر تجربة آمنة وسلسة وممتعة لتنظيم الزوّار وكبار الشخصيات وجميع المشاركين، لضمان انسيابية شاملة تُعزّز تجربة الحضور.",
+      },
+      coreValues: {
+        title: "قيمنا الأساسية",
+        values: [
+          {
+            title: "التميز",
+            description:
+              "نلتزم بأعلى المعايير في كل التفاصيل، من الفكرة إلى التنفيذ.",
+          },
+          {
+            title: "تجربة العميل",
+            description:
+              "نضع العميل في صميم كل ما نقوم به. نلتزم بتقديم تجربة متميزة ترتقي لتوقعاته، وتضيف قيمة حقيقية في كل مرحلة من مراحل الفعالية.",
+          },
+          {
+            title: "الإبداع",
+            description:
+              "نُبدع في إدارة الفعاليات من خلال حلول مبتكرة وتصاميم فريدة تعكس هوية العميل وتحقق أهدافه.",
+          },
+          {
+            title: "التطور التقني",
+            description:
+              "نُعيد ابتكار الفعاليات بتقنيات حديثة واستراتيجيات مدروسة ، لنمنح كل فعالية حسًا إبداعيًا يرتقي بالتجربة إلى أعلى درجات التميّز.",
+          },
+        ],
+        closingNote: 'نُبدع في تصميم التفاصيل.',
+        closingNoteText:
+          " نصنع فعاليات تبقى في الذاكرة، لأنها تنفذ بعناية لتلامس التوقعات وتتجاوزها. يسعدنا تواصلك معنا والعمل معك على تحويل أفكارك إلى تجربة استثنائية تجمع بين الإبداع والدقة في التنفيذ.",
+      },
+      about: {
+        aboutTitle: "نبذة عنا",
+        aboutDescription:
+          "Allevent شركة متخصصة في تنظيم الفعاليات في المملكة العربية السعودية ومنطقة الشرق الأوسط. تركز الشركة على تقديم خدمات متكاملة تشمل تنظيم وتشغيل المعارض والمؤتمرات وتنظيم الفعاليات الترفيهية والرياضية وإدارة الإنتاج، بالإضافة إلى خدمات إدارة الحشود والحجز وبيع التذاكر. كما تشمل خدماتنا صياغة الأفكار الإبداعية وابتكار وتطوير العلامة التجارية والهوية البصرية لعملائنا في القطاعين الحكومي والخاص.",
+
+        missionTitle: "رسالتنا",
+        missionDescription:
+          "نؤمن أن كل فعالية هي فرصة لصنع تجربة ملهمة. رسالتنا هي تحويل الأفكار إلى تجارب حيّة تعبّر عن هوية العميل من خلال التزامنا بتقديم حلول مبتكرة وتنفيذ احترافي متكامل لفعاليات ترتقي بالتوقعات.",
+
+        visionTitle: "رؤيتنا",
+        visionDescription:
+          "أن نُحدث نقلة نوعية في عالم الفعاليات المتكاملة على مستوى المملكة العربية السعودية والشرق الأوسط، من خلال تحويل الأفكار إلى لحظات استثنائية لا تُنسى.",
+      },
+    },
     policy: "سياسة الخصوصية",
     consent:
       'تُعتبر موافقتك على سياسة الخصوصية هذه ("السياسة") سارية المفعول فور استخدامك الأول لهذا الموقع الإلكتروني. ويحق لشركة \u2067allevent\u2069 وفقًا لتقديرها الخاص تعديل هذه السياسة بشكل فوري، وتُعتبر موافقتك على هذه التعديلات سارية المفعول باستخدامك المستمر للموقع.',
@@ -302,7 +449,7 @@ Phone: 0555363676`,
       "تخضع هذه الشروط لقوانين المملكة العربية السعودية، ويتم النظر في أي نزاعات أمام المحاكم المختصة في مدينة الرياض.",
     tosContactHeader: "12. تواصل معنا",
     tosContact:
-      "للاستفسارات أو الملاحظات حول هذه الشروط أو خدماتنا، يرجى التواصل معنا:\nشركة \u2067allevent\u2069\nص.ب 145111\nالرياض 4545\nالمملكة العربية السعودية\nالبريد الإلكتروني: info@allevent.com.sa\nالهاتف: 0555363676",
+      "للاستفسارات أو الملاحظات حول هذه الشروط أو خدماتنا، يرجى التواصل معنا:\nشركة \u2067allevent\u2069\nص.ب 145111\nالرياض 4545\nالمملكة العربية السعودية\nالبريد الإلكتروني: info@allevent.com.sa\nالهاتف: +966555363676",
     contact: {
       title: "للتواصل",
       description:
@@ -319,7 +466,7 @@ Phone: 0555363676`,
     services: {
       title: "الخدمات",
       intro:
-        "ابتكار المفاهيم وتنفيذها باحترافية.\nنقدّم حلولًا إبداعية متكاملة تبدأ من الفكرة وتنتهي بتنفيذ متقن يضمن تجربة استثنائية في كل مرحلة.\nتواصل معنا",
+        "\nنقدّم حلولًا إبداعية متكاملة تبدأ من الفكرة وتنتهي بتنفيذ متقن يضمن تجربة استثنائية في كل مرحلة.\n",
       eventManagement: {
         title: "إدارة فعاليات",
         description:

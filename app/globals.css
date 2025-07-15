@@ -38,6 +38,10 @@
   font-family: var(--font-outfit), sans-serif;
 }
 
+.font-zain {
+  font-family: var(--font-zain), sans-serif;
+}
+
 @media (min-width: 1536px) {
   html {
     font-size: 20px; 

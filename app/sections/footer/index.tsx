@@ -49,7 +49,7 @@ const Footer = () => {
               placeholder="Your Email Adress"
               className="outline-none border-b-1 border-white"
             />
-            <Link color="black" bg="white" href="#" text="Get in touch" />
+            <Link color="black" bg="white" href="/contact" text="Get in touch" />
           </div>
           <ul className="hidden lg:flex text-white mb-[3rem] ">
             <li className="mr-3">
@@ -87,10 +87,10 @@ const Footer = () => {
           </li>
         </ul>
         <div className="flex lg:hidden flex-col text-[#9C9C9C] text-center gap-5">
-          <a href="#" className="underline">
+          <a href="/terms-of-service" className="underline">
             Terms & Conditions
           </a>
-          <a href="#" className="underline">
+          <a href="/policy" className="underline">
             Privacy Policy
           </a>
           <p>Allevent © Copyright 2025</p>
@@ -98,10 +98,10 @@ const Footer = () => {
       </div>
       <div className="flex text-[#9C9C9C] text-center gap-5 w-[95%] mx-auto border-t-1 border-[#9C9C9C] py-[2rem]">
         <p className="mr-auto">Allevent © Copyright 2025</p>
-        <a href="#" className="underline">
+        <a href="/terms-of-service" className="underline">
           Terms & Conditions
         </a>
-        <a href="#" className="underline">
+        <a href="/policy" className="underline">
           Privacy Policy
         </a>
       </div>

@@ -1,42 +1,69 @@
 "use client";
+
 import React from "react";
 import Service from "./desktop";
 import { Parallax } from "react-scroll-parallax";
+import { useLanguage } from "@/app/contexts/LanguageContext";
+import { translations } from "@/app/translation";
 
-const desktop = () => {
+const ServiceDesktop = () => {
+  const { locale } = useLanguage();
+
+  //@ts-ignore
+  const t = translations[locale];
+  const services = t.homepage.services;
+
   return (
     <div className="mt-[4rem]">
-      {/* First service - appears on scroll */}
-      <Parallax speed={5} opacity={[0.4, 1]}>
-        <Service img="1" title="Event Management" descrtiption="Full-service event management from concept to closing. Working closely with your team, we ensure flawless execution through every touchpoint." />
+      <Parallax speed={5} opacity={[0, 1]} translateY={['250px', '0px']}>
+        <Service
+          img="1"
+          title={services.eventManagement}
+          descrtiption={services.eventManagementDescription}
+        />
       </Parallax>
-      
-      {/* Second service - appears on scroll */}
-      <Parallax speed={10} opacity={[0.4, 1]}>
-        <Service img="2" title="Event Registration" descrtiption="From branded digital platforms to check-in systems and on-site support, Allevent ensures seamless registration, check-in, and credentialing." />
+
+      <Parallax speed={10} opacity={[0, 1]}  translateY={['250px', '0px']}>
+        <Service
+          img="2"
+          title={services.eventRegisteration}
+          descrtiption={services.eventRegisterationDescription}
+        />
       </Parallax>
-      
-      {/* Third service - appears on scroll */}
-      <Parallax speed={15} opacity={[0.4, 1]}>
-        <Service img="3" title="Branding, Visual Identity, Event Design" descrtiption="Keeping your brand top-of-mind with your guests, we offer end-to-end visual identity to ensure a cohesive guest experience." />
+
+      <Parallax speed={15} opacity={[0, 1]}  translateY={['250px', '0px']}>
+        <Service
+          img="3"
+          title={services.branding}
+          descrtiption={services.brandingDescription}
+        />
       </Parallax>
-      
-      {/* Fourth service - appears on scroll */}
-      <Parallax speed={20} opacity={[0.4, 1]} >
-        <Service img="4" title="Concept Development" descrtiption="Working closely with your team, we transform ideas into impactful themes and unforgettable event experiences." />
+
+      <Parallax speed={20} opacity={[0, 1]}  translateY={['250px', '0px']}>
+        <Service
+          img="4"
+          title={services.concept}
+          descrtiption={services.conceptDescription}
+        />
       </Parallax>
-      
-      {/* Fifth service - appears on scroll */}
-      <Parallax speed={25} opacity={[0.4, 1]}>
-        <Service img="5" title="Production Management" descrtiption="We provide technical production support, stage design, and show running for conferences, trade shows, launches, and more." />
+
+      <Parallax speed={25} opacity={[0, 1]}  translateY={['250px', '0px']}>
+        <Service
+          img="5"
+          title={services.production}
+          descrtiption={services.productionDescription}
+        />
       </Parallax>
-      
-      {/* Sixth service - appears on scroll */}
-      <Parallax speed={30} opacity={[0.4, 1]}>
-        <Service img="6" title="Crowd Control" descrtiption="Enjoy a safe, secure, enjoyable, and frictionless experience for event guests, VIPs, and all stakeholders." />
+
+      <Parallax speed={30} opacity={[0, 1]}  translateY={['250px', '0px']}>
+        <Service
+          img="6"
+          title={services.crowd}
+          descrtiption={services.crowdDescription}
+        />
       </Parallax>
     </div>
   );
 };
 
-export default desktop;
+export default ServiceDesktop;

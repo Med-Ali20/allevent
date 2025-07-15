@@ -3,12 +3,15 @@
 import { useState, useEffect } from "react";
 import Link from "@/app/ui/link";
 import Language from "@/app/components/language";
+import { useLanguage } from "@/app/contexts/LanguageContext";
 
 type Props = {
   setShowMenu: any;
 };
 
 const Header: React.FC<Props> = ({ setShowMenu }) => {
+  const { locale } = useLanguage();
+
   const [isVisible, setIsVisible] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
 
@@ -35,7 +38,9 @@ const Header: React.FC<Props> = ({ setShowMenu }) => {
 
   return (
     <header
-      className={`flex items-center p-4 lg:py-[1.72rem] lg:px-[4.5rem] font-outfit font-light fixed top-0 right-0 left-0 z-100 transition-transform duration-600 ease-in-out ${
+      className={`flex items-center p-4 lg:py-[1.72rem] lg:px-[4.5rem] ${
+        locale === "ar" ? "font-[zain]" : "font-outfit"
+      } font-light fixed top-0 right-0 left-0 z-100 transition-transform duration-600 ease-in-out ${
         isVisible ? "translate-y-0" : "-translate-y-full"
       }`}
     >
@@ -58,10 +63,10 @@ const Header: React.FC<Props> = ({ setShowMenu }) => {
         <ul className="flex items-center text-white">
           <li className="mx-[1.8rem]"></li>
           <li className="mx-[1.8rem]">
-            <a href="/services"> Services </a>
+            <a href="/services"> {locale === 'en' ? 'Services' : 'الخدمات'} </a>
           </li>
           <li className="mx-[1.8rem]">
-            <Link color="white" text="Let's talk" href="/contact" />
+            <Link color="white" text={`${locale === 'en' ? "Let's talk" : 'تواصل معنا'}`} href="/contact" />
           </li>
           <li className="mr-3 ml-[1.8rem]">
             <a

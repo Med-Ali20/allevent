@@ -12,7 +12,11 @@ const PrivacyPolicy = () => {
   const isArabic = locale === "ar";
 
   return (
-    <div className={`pt-40 px-6 md:px-20 text-white mb-[3rem] ${isArabic ? "text-right" : "text-left"}`}>
+    <div
+      className={`pt-40 px-6 md:px-20 text-white mb-[3rem] relative ${
+        isArabic ? "text-right font-[zain]" : "text-left"
+      }`}
+    >
       <section className="max-w-4xl mx-auto space-y-8 leading-relaxed">
         <h1 className="text-3xl font-bold">{t.policy}</h1>
 
@@ -66,6 +70,16 @@ const PrivacyPolicy = () => {
             <p>{t.virusProtectionText}</p>
           </div>
         </article>
+        <img
+          src="/icons/circles-about.svg"
+          alt=""
+          className="hidden lg:block absolute top-[18rem] left-0 w-[8rem]"
+        />
+        <img
+          src="/icons/circles-red.svg"
+          alt=""
+          className="hidden lg:block absolute top-[38rem] left-0 w-[4rem]"
+        />
       </section>
     </div>
   );

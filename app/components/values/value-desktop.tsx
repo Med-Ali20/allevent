@@ -1,5 +1,12 @@
+"use client";
+
 import React from "react";
-import { useInView } from 'react-intersection-observer';
+import { useLanguage } from "@/app/contexts/LanguageContext";
+import { translations } from "../../translation";
+import Value from "@/app/components/values";
+import ValueDesktop from "@/app/components/values/desktop";
+
+import { useInView } from "react-intersection-observer";
 
 type Props = {
   top: number;
@@ -7,28 +14,31 @@ type Props = {
 };
 
 const value: React.FC<Props> = ({ top, left }) => {
+  const { locale } = useLanguage();
+  //@ts-ignore
+  const { coreValues } = translations[locale].homepage;
   const { ref: ref1, inView: inView1 } = useInView({
     threshold: 0.1,
-    rootMargin: '0px 0px -100px 0px',
-    triggerOnce: true
+    rootMargin: "0px 0px -100px 0px",
+    triggerOnce: true,
   });
 
   const { ref: ref2, inView: inView2 } = useInView({
     threshold: 0.1,
-    rootMargin: '0px 0px -100px 0px',
-    triggerOnce: true
+    rootMargin: "0px 0px -100px 0px",
+    triggerOnce: true,
   });
 
   const { ref: ref3, inView: inView3 } = useInView({
     threshold: 0.1,
-    rootMargin: '0px 0px -100px 0px',
-    triggerOnce: true
+    rootMargin: "0px 0px -100px 0px",
+    triggerOnce: true,
   });
 
   const { ref: ref4, inView: inView4 } = useInView({
     threshold: 0.1,
-    rootMargin: '0px 0px -100px 0px',
-    triggerOnce: true
+    rootMargin: "0px 0px -100px 0px",
+    triggerOnce: true,
   });
 
   return (
@@ -40,25 +50,28 @@ const value: React.FC<Props> = ({ top, left }) => {
           src="/icons/values-creativity.svg"
           alt="creativity"
           className={`w-[4.5vw] my-[3vw] opacity-0 translate-y-8 ${
-            inView1 ? 'icon-reveal-1' : ''
+            inView1 ? "icon-reveal-1" : ""
           }`}
         />
-        <span 
+        <span
           ref={ref1}
           className={`w-[1vw] h-[1vw] bg-secondary rounded-full ${
-            inView1 ? 'glow-effect-1' : ''
+            inView1 ? "glow-effect-1" : ""
           }`}
         ></span>
-        <h3 className={`font-outfit font-bold mt-[2vw] text-[1vw] opacity-0 translate-y-8 ${
-          inView1 ? 'text-reveal-1' : ''
-        }`}>
-          Creativity
+        <h3
+          className={`font-bold mt-[2vw] opacity-0 translate-y-8 ${
+            inView1 ? "text-reveal-1" : ""
+          } ${locale === 'ar' ? 'font-[zain] text-[1.2rem] leading-[1.4rem]' : 'font-outfit text-[1vw]'}` }
+        >
+          {coreValues.values[2].title}
         </h3>
-        <p className={`font-outfit font-light text-[1rem] mt-2 w-[16vw] opacity-0 translate-y-8 ${
-          inView1 ? 'text-reveal-1-p' : ''
-        }`}>
-          We thrive on bold ideas and outside- the-box thinking to fuel
-          unforgettable experiences.
+        <p
+          className={`font-light mt-2 w-[16vw] opacity-0 translate-y-8 ${
+            inView1 ? "text-reveal-1-p" : ""
+          } ${locale === 'ar' ? 'font-[zain] text-[1.2rem] leading-[1.4rem]' : 'font-outfit  text-[1rem]'}`}
+        >
+          {coreValues.values[2].description}
         </p>
       </div>
       <div
@@ -68,25 +81,28 @@ const value: React.FC<Props> = ({ top, left }) => {
           src="/icons/centricity.svg"
           alt="creativity"
           className={`w-[4.5vw] my-[3vw] opacity-0 translate-y-8 ${
-            inView2 ? 'icon-reveal-2' : ''
+            inView2 ? "icon-reveal-2" : ""
           }`}
         />
-        <span 
+        <span
           ref={ref2}
           className={`w-[1vw] h-[1vw] bg-secondary rounded-full ${
-            inView2 ? 'glow-effect-2' : ''
+            inView2 ? "glow-effect-2" : ""
           }`}
         ></span>
-        <h3 className={`font-outfit font-bold mt-[2vw] text-[1vw] opacity-0 translate-y-8 ${
-          inView2 ? 'text-reveal-2' : ''
-        }`}>
-          Client-Centricity
+        <h3
+          className={`font-bold mt-[2vw] opacity-0 translate-y-8 ${
+            inView2 ? "text-reveal-2" : ""
+          } ${locale === 'ar' ? 'font-[zain] text-[1.2rem] leading-[1.4rem]' : 'font-outfit text-[1vw]'}`}
+        >
+          {coreValues.values[1].title}
         </h3>
-        <p className={`font-outfit font-light text-[1rem] mt-2 w-[16vw] opacity-0 translate-y-8 ${
-          inView2 ? 'text-reveal-2-p' : ''
-        }`}>
-          We listen, adapt, and tailor our services to meet or exceed each
-          client's unique vision and goals.
+        <p
+          className={`font-light mt-2 w-[16vw] opacity-0 translate-y-8 ${
+            inView2 ? "text-reveal-2-p" : ""
+          } ${locale === 'ar' ? 'font-[zain] text-[1.2rem] leading-[1.4rem]' : 'font-outfit  text-[1rem]'}`}
+        >
+          {coreValues.values[1].description}
         </p>
       </div>
       <div
@@ -96,25 +112,28 @@ const value: React.FC<Props> = ({ top, left }) => {
           src="/icons/excellence.svg"
           alt="creativity"
           className={`w-[4.5vw] my-[3vw] opacity-0 translate-y-8 ${
-            inView3 ? 'icon-reveal-3' : ''
+            inView3 ? "icon-reveal-3" : ""
           }`}
         />
-        <span 
+        <span
           ref={ref3}
           className={`w-[1vw] h-[1vw] bg-secondary rounded-full ${
-            inView3 ? 'glow-effect-3' : ''
+            inView3 ? "glow-effect-3" : ""
           }`}
         ></span>
-        <h3 className={`font-outfit font-bold mt-[2vw] text-[1vw] opacity-0 translate-y-8 ${
-          inView3 ? 'text-reveal-3' : ''
-        }`}>
-          Excellence
+        <h3
+          className={`font-bold mt-[2vw]  opacity-0 translate-y-8 ${
+            inView3 ? "text-reveal-3" : ""
+          } ${locale === 'ar' ? 'font-[zain] text-[1.2rem] leading-[1.4rem]' : 'font-outfit text-[1vw]'}`}
+        >
+          {coreValues.values[0].title}
         </h3>
-        <p className={`font-outfit font-light text-[1rem] mt-2 w-[16vw] opacity-0 translate-y-8 ${
-          inView3 ? 'text-reveal-3-p' : ''
-        }`}>
-          Delivering the highest standards in every detail, from concept to
-          completion.
+        <p
+          className={`font-light mt-2 w-[16vw] opacity-0 translate-y-8 ${
+            inView3 ? "text-reveal-3-p" : ""
+          } ${locale === 'ar' ? 'font-[zain] text-[1.2rem] leading-[1.4rem]' : 'font-outfit  text-[1rem]'}`}
+        >
+          {coreValues.values[0].description}
         </p>
       </div>
       <div
@@ -124,25 +143,28 @@ const value: React.FC<Props> = ({ top, left }) => {
           src="/icons/innovation.svg"
           alt="creativity"
           className={`w-[4.5vw] my-[3vw] opacity-0 translate-y-8 ${
-            inView4 ? 'icon-reveal-4' : ''
+            inView4 ? "icon-reveal-4" : ""
           }`}
         />
-        <span 
+        <span
           ref={ref4}
           className={`w-[1vw] h-[1vw] bg-secondary rounded-full ${
-            inView4 ? 'glow-effect-4' : ''
+            inView4 ? "glow-effect-4" : ""
           }`}
         ></span>
-        <h3 className={`font-outfit font-bold mt-[2vw] text-[1vw] opacity-0 translate-y-8 ${
-          inView4 ? 'text-reveal-4' : ''
-        }`}>
-          Innovation
+        <h3
+          className={`font-bold mt-[2vw]  opacity-0 translate-y-8 ${
+            inView4 ? "text-reveal-4" : ""
+          } ${locale === 'ar' ? 'font-[zain] text-[1.2rem] leading-[1.4rem]' : 'font-outfit text-[1vw]'}`}
+        >
+          {coreValues.values[3].title}
         </h3>
-        <p className={`font-outfit font-light text-[1rem] mt-2 w-[16vw] opacity-0 translate-y-8 ${
-          inView4 ? 'text-reveal-4-p' : ''
-        }`}>
-          Embracing change, we apply next-level tools, technology, and trends to
-          elevate every event.
+        <p
+          className={`font-light mt-2 w-[16vw] opacity-0 translate-y-8 ${
+            inView4 ? "text-reveal-4-p" : ""
+          } ${locale === 'ar' ? 'font-[zain] text-[1.2rem] leading-[1.4rem]' : 'font-outfit  text-[1rem]'}`}
+        >
+          {coreValues.values[3].description}
         </p>
       </div>
     </>
