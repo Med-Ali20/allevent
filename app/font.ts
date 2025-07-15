@@ -1,46 +1,46 @@
-// app/fonts.ts
+// app..ts
 import { Outfit, Montserrat, Zain } from 'next/font/google';
 import localFont from 'next/font/local'
 
 export const zain = localFont({
   src: [
     {
-      path: '../public/fonts/Zain/Zain-Regular.ttf',
+      path: './Zain/Zain-Regular.ttf',
       weight: '400',
       style: 'normal',
     },
     {
-      path: '../public/fonts/Zain/Zain-Bold.ttf',
+      path: './Zain/Zain-Bold.ttf',
       weight: '700',
       style: 'normal',
     },
     {
-      path: '../public/fonts/Zain/Zain-Light.ttf',
+      path: './Zain/Zain-Light.ttf',
       weight: '300',
       style: 'normal',
     },
     {
-      path: '../public/fonts/Zain/Zain-LightItalic.ttf',
+      path: './Zain/Zain-LightItalic.ttf',
       weight: '300',
       style: 'italic',
     },
     {
-      path: '../public/fonts/Zain/Zain-Italic.ttf',
+      path: './Zain/Zain-Italic.ttf',
       weight: '400',
       style: 'italic',
     },
     {
-      path: '../public/fonts/Zain/Zain-ExtraBold.ttf',
+      path: './Zain/Zain-ExtraBold.ttf',
       weight: '800',
       style: 'normal',
     },
     {
-      path: '../public/fonts/Zain/Zain-ExtraLight.ttf',
+      path: './Zain/Zain-ExtraLight.ttf',
       weight: '200',
       style: 'normal',
     },
     {
-      path: '../public/fonts/Zain/Zain-Black.ttf',
+      path: './Zain/Zain-Black.ttf',
       weight: '900',
       style: 'normal',
     },
