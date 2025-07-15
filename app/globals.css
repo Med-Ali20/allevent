@@ -30,6 +30,20 @@
   --breakpoint-3xl: 1920px;
 }
 
+@font-face {
+  font-family: 'zain';
+  src: url('/fonts/Zain/Zain-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'zain';
+  src: url('/fonts/Zain/Zain-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
 .font-montserrat {
   font-family: var(--font-montserrat), sans-serif;
 }
