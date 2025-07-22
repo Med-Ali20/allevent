@@ -13,7 +13,7 @@ const PrivacyPolicy = () => {
 
   return (
     <div
-      className={`pt-40 px-6 md:px-20 text-white mb-[3rem] relative ${
+      className={`pt-40 px-6 md:px-20 text-white  mb-[15rem] relative ${
         isArabic ? "text-right font-[zain]" : "text-left"
       }`}
     >

@@ -1,9 +1,12 @@
 import Link from "@/app/ui/link";
 import React from "react";
+import EveryMomentMatters from "@/app/sections/EveryMomentMatters";
 
 const Footer = () => {
   return (
     <>
+      <EveryMomentMatters />
+
       <div className="flex flex-col items-center lg:items-start text-white pb-[3rem] lg:flex-row lg:p-[3rem]">
         <img
           src="/icons/logo-mobile.svg"
@@ -49,7 +52,12 @@ const Footer = () => {
               placeholder="Your Email Adress"
               className="outline-none border-b-1 border-white"
             />
-            <Link color="black" bg="white" href="/contact" text="Get in touch" />
+            <Link
+              color="black"
+              bg="white"
+              href="/contact"
+              text="Get in touch"
+            />
           </div>
           <ul className="hidden lg:flex text-white mb-[3rem] ">
             <li className="mr-3">
@@ -71,17 +79,29 @@ const Footer = () => {
         </div>
         <ul className="flex lg:hidden items-center text-white mb-[3rem] border-b-1 border-[#9C9C9C] w-[80%] justify-center py-[4rem]">
           <li className="mr-3 ml-[1.8rem]">
-            <a href="https://www.instagram.com/allevent_ksa/" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://www.instagram.com/allevent_ksa/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <img src="/icons/instagram.svg" alt="instagram" />
             </a>
           </li>
           <li className="mx-3">
-            <a href="https://www.linkedin.com/company/alleventksa" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://www.linkedin.com/company/alleventksa"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <img src="/icons/linkedin.svg" alt="instagram" />
             </a>
           </li>
           <li className="ml-3">
-            <a href="https://wa.me/+966555363676" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://wa.me/+966555363676"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <img src="/icons/whatsapp.svg" alt="instagram" />
             </a>
           </li>
@@ -96,7 +116,7 @@ const Footer = () => {
           <p>Allevent © Copyright 2025</p>
         </div>
       </div>
-      <div className="flex text-[#9C9C9C] text-center gap-5 w-[95%] mx-auto border-t-1 border-[#9C9C9C] py-[2rem]">
+      <div className="flex text-[#9C9C9C] hidden lg:block text-center gap-5 w-[95%] mx-auto border-t-1 border-[#9C9C9C] py-[2rem]">
         <p className="mr-auto">Allevent © Copyright 2025</p>
         <a href="/terms-of-service" className="underline">
           Terms & Conditions

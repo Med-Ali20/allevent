@@ -68,9 +68,9 @@ const Contact = () => {
   };
 
   return (
-    <div className="w-full">
+    <div className="w-full  mb-[12rem]">
       <div
-        className={`pt-40 px-6 md:px-20 text-white mb-[3rem] max-w-[90%] lg:max-w-[50%] lg:mx-auto ${
+        className={`pt-40 px-6 md:px-20 text-white mb-[3rem] max-w-[90%] lg:max-w-[80%] lg:mx-auto ${
           isArabic ? "text-right font-[zain]" : "text-left font-outfit"
         }`}
       >

@@ -1,67 +1,93 @@
 "use client";
 
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import Service from "./desktop";
-import { Parallax } from "react-scroll-parallax";
 import { useLanguage } from "@/app/contexts/LanguageContext";
 import { translations } from "@/app/translation";
 
 const ServiceDesktop = () => {
   const { locale } = useLanguage();
-
   //@ts-ignore
   const t = translations[locale];
   const services = t.homepage.services;
 
+  const refs = useRef<Array<HTMLDivElement | null>>([]);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("opacity-100", "translate-y-0");
+            entry.target.classList.remove("opacity-0", "translate-y-10");
+          }
+        });
+      },
+      {
+        threshold: 0.2,
+      }
+    );
+
+    refs.current.forEach((ref) => {
+      if (ref) observer.observe(ref);
+    });
+
+    return () => {
+      refs.current.forEach((ref) => {
+        if (ref) observer.unobserve(ref);
+      });
+    };
+  }, []);
+
+  const serviceData = [
+    {
+      img: "1",
+      title: services.eventManagement,
+      description: services.eventManagementDescription,
+    },
+    {
+      img: "2",
+      title: services.eventRegisteration,
+      description: services.eventRegisterationDescription,
+    },
+    {
+      img: "3",
+      title: services.branding,
+      description: services.brandingDescription,
+    },
+    {
+      img: "4",
+      title: services.concept,
+      description: services.conceptDescription,
+    },
+    {
+      img: "5",
+      title: services.production,
+      description: services.productionDescription,
+    },
+    {
+      img: "6",
+      title: services.crowd,
+      description: services.crowdDescription,
+    },
+  ];
+
   return (
-    <div className="mt-[4rem]">
-      <Parallax speed={5} opacity={[0, 1]} translateY={['250px', '0px']}>
-        <Service
-          img="1"
-          title={services.eventManagement}
-          descrtiption={services.eventManagementDescription}
-        />
-      </Parallax>
-
-      <Parallax speed={10} opacity={[0, 1]}  translateY={['250px', '0px']}>
-        <Service
-          img="2"
-          title={services.eventRegisteration}
-          descrtiption={services.eventRegisterationDescription}
-        />
-      </Parallax>
-
-      <Parallax speed={15} opacity={[0, 1]}  translateY={['250px', '0px']}>
-        <Service
-          img="3"
-          title={services.branding}
-          descrtiption={services.brandingDescription}
-        />
-      </Parallax>
-
-      <Parallax speed={20} opacity={[0, 1]}  translateY={['250px', '0px']}>
-        <Service
-          img="4"
-          title={services.concept}
-          descrtiption={services.conceptDescription}
-        />
-      </Parallax>
-
-      <Parallax speed={25} opacity={[0, 1]}  translateY={['250px', '0px']}>
-        <Service
-          img="5"
-          title={services.production}
-          descrtiption={services.productionDescription}
-        />
-      </Parallax>
-
-      <Parallax speed={30} opacity={[0, 1]}  translateY={['250px', '0px']}>
-        <Service
-          img="6"
-          title={services.crowd}
-          descrtiption={services.crowdDescription}
-        />
-      </Parallax>
+    <div className="mt-[4rem] space-y-10">
+      {serviceData.map((service, index) => (
+        <div
+          key={index}
+          // @ts-ignore
+          ref={(el) => (refs.current[index] = el)}
+          className="transition-all duration-700 ease-in-out opacity-0 translate-y-10"
+        >
+          <Service
+            img={service.img}
+            title={service.title}
+            descrtiption={service.description}
+          />
+        </div>
+      ))}
     </div>
   );
 };

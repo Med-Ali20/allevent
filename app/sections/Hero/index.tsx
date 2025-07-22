@@ -28,7 +28,7 @@ export default function HeroSection() {
       <div className="absolute top-0 left-0 w-full h-full bg-black opacity-60 z-10" />
 
       {/* 🔹 Content */}
-      <div className="relative w-[85%] md:w-full mx-auto z-20 flex flex-col items-left md:items-center md:gap-0 justify-center mt-[5rem] text-center text-white pl-9 h-full gap-[6rem]">
+      <div className="relative w-[85%] md:w-full mx-auto z-20 flex flex-col items-left md:items-center md:gap-0 justify-center mt-[2rem] text-center text-white pl-9 h-full gap-[6rem]">
         {locale === "en" ? (
           <h1 className="text-[4rem] md:text-[4.5rem] font-bold text-left leading-none md:leading-[4.25rem]  ">
             Every Detail Counts{" "}
@@ -37,7 +37,7 @@ export default function HeroSection() {
             <span className="text-secondary -ml-[0.6rem]">.</span>
           </h1>
         ) : (
-          <h1 className="text-[4rem] md:text-[3.5rem] font-[zain] font-bold text-right leading-none md:leading-[3.75rem]  ">
+          <h1 className="text-[4rem] md:text-[4.5rem] font-[zain] font-bold text-right leading-none md:leading-[4rem]  ">
             ..من الفكرة للتنفيذ
             <br />
             !نُبدع في تصميم التفاصيل
