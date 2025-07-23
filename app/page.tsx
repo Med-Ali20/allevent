@@ -12,8 +12,8 @@ import { useLanguage } from "@/app/contexts/LanguageContext";
 import Menu from "@/app/components/menu";
 
 export default function Home() {
-    const { locale } = useLanguage();
-  
+  const { locale } = useLanguage();
+
   return (
     <ParallaxProvider>
       <div className="font-montserrat text-white top-0 left-0 right-0">
@@ -24,17 +24,34 @@ export default function Home() {
               src="/icons/circles.svg"
               srcSet="/icons/circles.svg 385w, /icons/circles-mobile.svg 174w"
               sizes="(max-width: 1024px) 174px, 385px"
-              className="absolute -left-[6%] top-50 lg:left-[0] lg:top-70 z-20 rotate-[180deg]"
+              className="absolute -left-[6%] top-50 lg:left-[0] lg:top-20 z-20 rotate-[180deg]"
               alt=""
+            />
+            <img
+              src="/icons/circles-red.svg"
+              alt=""
+              className="hidden lg:block absolute top-[38rem] left-2 w-[4rem]"
             />
           </div>
           <Description className="col-span-[3]" />
-          <h2 className={`col-span-[1] ml-[1.4rem] md:ml-[5rem] uppercase font-bold text-[1.6rem] ${locale === 'ar' ? 'lg:opacity-0 text-right mr-[1rem] md:mr-[3rem] text-[2.5rem] font-[zain]' : 'font-outfit'} mb-[1.5rem] lg:mb-[3rem] mt-[4rem]`}>
-            { locale === 'en' ? 'Services' : 'الخدمات' }
+          <h2
+            className={`col-span-[1] ml-[1.4rem] md:ml-[5rem] uppercase font-bold text-[1.6rem] ${
+              locale === "ar"
+                ? "lg:opacity-0 text-right mr-[1rem] md:mr-[3rem] text-[2.5rem] font-[zain]"
+                : "font-outfit"
+            } mb-[1.5rem] lg:mb-[3rem] mt-[4rem]`}
+          >
+            {locale === "en" ? "Services" : "الخدمات"}
           </h2>
           <Services className="col-span-[3]" />
-          <h2 className={`col-span-[1] ml-[1.4rem] md:ml-[5rem] uppercase font-bold text-[1.6rem] ${locale === 'ar' ? 'opacity-0 text-right mr-[3rem] text-[2.5rem] font-[zain]' : 'font-outfit'} mt-[4rem] lg:mt-0 relative`}>
-            {locale === 'en' ? 'About us' : 'نبذة عنا'}
+          <h2
+            className={`col-span-[1] ml-[1.4rem] md:ml-[5rem] lg:uppercase font-bold text-[2rem] md:text-[1.6rem] ${
+              locale === "ar"
+                ? "opacity-0 text-right mr-[3rem] text-[2.5rem] font-[zain]"
+                : "font-outfit"
+            } mt-[4rem] lg:mt-0 relative`}
+          >
+            {locale === "en" ? "About Us" : "نبذة عنا"}
           </h2>
           <About className="col-span-[3]" />
         </div>

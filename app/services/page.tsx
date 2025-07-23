@@ -59,7 +59,7 @@ const Services = () => {
         <div className="mb-[4rem] flex flex-col pr-5">
           {locale === "en" ? (
             <h1 className="text-[4rem] font-monsterrat lg:text-[3.5rem] leading-none mb-4 lg:mb-0">
-              <br className="lg:hidden" /> Our Services.{" "}
+              <br className="lg:hidden" /> Our Services{" "}
               {/* <span className="text-secondary leading-none ">
                 .
               </span>

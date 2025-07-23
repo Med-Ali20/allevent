@@ -116,7 +116,7 @@ const Footer = () => {
           <p>Allevent © Copyright 2025</p>
         </div>
       </div>
-      <div className="flex text-[#9C9C9C] hidden lg:block text-center gap-5 w-[95%] mx-auto border-t-1 border-[#9C9C9C] py-[2rem]">
+      <div className="hidden lg:flex text-[#9C9C9C] text-center gap-5 w-[95%] mx-auto border-t-1 border-[#9C9C9C] py-[2rem]">
         <p className="mr-auto">Allevent © Copyright 2025</p>
         <a href="/terms-of-service" className="underline">
           Terms & Conditions

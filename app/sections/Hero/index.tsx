@@ -38,7 +38,7 @@ export default function HeroSection() {
           </h1>
         ) : (
           <h1 className="text-[4rem] md:text-[4.5rem] font-[zain] font-bold text-right leading-none md:leading-[4rem]  ">
-            ..من الفكرة للتنفيذ
+            <span className="text-secondary ">.</span><span className="text-primary ">.</span>من الفكرة للتنفيذ
             <br />
             !نُبدع في تصميم التفاصيل
           </h1>

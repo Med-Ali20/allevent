@@ -2,9 +2,9 @@ export const translations = {
   en: {
     homepage: {
       impressions:
-        "Allevent transforms ideas into unforgettable, immersive experiences that leave a lasting impression.",
+        "Allevent transforms ideas into unforgettable, immersive experiences that leave a lasting impression. ",
       ideation:
-        "From event ideation to complete execution.. Our creative team does it all!",
+        "From event ideation to complete execution... our creative team does it all!",
       attention:
         "We deliver events with unmatched attention to detail, innovative concepts, and flawless execution through every touchpoint. Every element is precisely tailored to reflect your brand and vision, resulting in a guest experience beyond compare.",
       passion: "",
@@ -295,7 +295,7 @@ Phone: `,
       impressions:
         "\u202Bنُبدع في تحويل الأفكار إلى تجارب استثنائية لا تُنسى،\u202C",
       ideation:
-        "\u202Bتترك انطباعًا مميزًا من لحظة التخطيط وحتى التنفيذ حيث يتولى فريقنا الإبداعي كل التفاصيل باحترافية.\u202C",
+        "\u202Bتترك انطباعًا مميزًا من لحظة التخطيط وحتى التنفيذ.. حيث يتولى فريقنا الإبداعي كل التفاصيل باحترافية.\u202C",
       attention:
         "\u202Bنُنفّذ فعالياتنا بكل دقة، وبأفكار مبتكرة، وتنفيذ احترافي يعتني بأدق التفاصيل. نحرص على تصميم كل جانب من جوانب الفعالية لنمنحكم تجربة لا تُنسى.\u202C",
       passion:
@@ -350,7 +350,7 @@ Phone: `,
               "\u202Bنُعيد ابتكار الفعاليات بتقنيات حديثة واستراتيجيات مدروسة ، لنمنح كل فعالية حسًا إبداعيًا يرتقي بالتجربة إلى أعلى درجات التميّز.\u202C",
           },
         ],
-        closingNote: ".\u202Bتهمنا لان كل لحظة\u202C",
+        closingNote: ".\u202Bتهمنا لأن كل لحظة\u202C",
         closingNoteText:
           "\u202Bنصنع فعاليات تبقى في الذاكرة، لأنها تنفذ بعناية لتلامس التوقعات وتتجاوزها. يسعدنا تواصلك معنا والعمل معك على تحويل أفكارك إلى تجربة استثنائية تجمع بين الإبداع والدقة في التنفيذ.\u202C",
       },
@@ -470,7 +470,7 @@ Phone: `,
       intro:
         "\u202Bنقدّم حلولًا إبداعية متكاملة تبدأ من الفكرة وتنتهي بتنفيذ متقن يضمن تجربة استثنائية في كل مرحلة\u202C",
       eventManagement: {
-        title: "\u202Bإدارة فعاليات\u202C",
+        title: "\u202Bإدارة الفعاليات\u202C",
         description:
           "\u202Bإدارة فعاليات متكاملة من الفكرة حتى التنفيذ الكامل.\u202C \u202Bنعمل معكم لضمان تنفيذ مثالي في كل مرحلة من مراحل الفعالية\u202C",
         items: [
