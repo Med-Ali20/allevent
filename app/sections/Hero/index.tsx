@@ -37,10 +37,11 @@ export default function HeroSection() {
             <span className="text-secondary -ml-[0.6rem]">.</span>
           </h1>
         ) : (
-          <h1 className="text-[4rem] md:text-[4.5rem] font-[zain] font-bold text-right leading-none md:leading-[4rem]  ">
-            <span className="text-secondary ">.</span><span className="text-primary ">.</span>من الفكرة للتنفيذ
+          <h1 className="text-[4rem] md:text-[4.5rem] font-[zain] font-bold text-right leading-none md:leading-[4rem]">
+            <span className="text-secondary">.</span>
+            <span className="text-primary">.</span>من الفكرة للتنفيذ
             <br />
-            !نُبدع في تصميم التفاصيل
+            {"\u202Bنُبدع في تصميم التفاصيل!\u202C"}
           </h1>
         )}
       </div>
