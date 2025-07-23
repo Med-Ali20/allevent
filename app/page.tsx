@@ -45,7 +45,7 @@ export default function Home() {
           </h2>
           <Services className="col-span-[3]" />
           <h2
-            className={`col-span-[1] ml-[1.4rem] md:ml-[5rem] lg:uppercase font-bold text-[2rem] md:text-[1.6rem] ${
+            className={`col-span-[1] ml-[1.4rem] md:ml-[5rem] font-bold text-[2rem] md:text-[1.6rem] ${
               locale === "ar"
                 ? "opacity-0 text-right mr-[3rem] text-[2.5rem] font-[zain]"
                 : "font-outfit"
