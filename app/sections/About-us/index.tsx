@@ -149,7 +149,7 @@ const About: React.FC<Props> = ({ className }) => {
             ref={imageRef}
             src="/images/2-desktop.jpg"
             alt="allevent"
-            className="w-[32rem] h-[30rem] hidden lg:block transition-all duration-700 ease-in-out opacity-0 translate-y-10 object-cover"
+            className="w-[32rem] rounded h-[30rem] hidden lg:block transition-all duration-700 ease-in-out opacity-0 translate-y-10 object-cover"
           />
         </div>
       </div>
