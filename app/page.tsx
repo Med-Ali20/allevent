@@ -28,9 +28,9 @@ export default function Home() {
               alt=""
             />
             <img
-              src="/icons/circles-red.svg"
+              src="/images/circles.png"
               alt=""
-              className="hidden lg:block absolute top-[38rem] left-2 w-[4rem]"
+              className="absolute -left-[6%] top-90 lg:-left-[5rem] lg:top-160 z-20 rotate-[90deg]"
             />
           </div>
           <Description className="col-span-[3]" />
@@ -51,7 +51,7 @@ export default function Home() {
                 : "font-outfit"
             } mt-[4rem] lg:mt-0 relative`}
           >
-            {locale === "en" ? "About Us" : "نبذة عنا"}
+            {/* {locale === "en" ? "About Us" : "نبذة عنا"} */}
           </h2>
           <About className="col-span-[3]" />
         </div>

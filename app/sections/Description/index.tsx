@@ -20,7 +20,7 @@ const index: React.FC<Props> = ({ className }) => {
     <div
       className={`${className} mx-[1.4rem] md:mx-[5rem] mt-[5rem] mb-[8rem] lg:mb-2 ${locale === 'ar' ? 'text-right font-[zain]' : ''}`}
     >
-      <h2 className="text-[2.3rem] md:text-[2rem] font-bold leading-none">
+      <h2 className="text-[2.3rem] md:text-[1.7rem] font-bold lg:leading-[2rem]">
         <span className="text-[#959595]">
           {t.homepage.impressions}
         </span>

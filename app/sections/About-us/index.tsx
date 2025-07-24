@@ -43,29 +43,31 @@ const About: React.FC<Props> = ({ className }) => {
       className={`${className} mx-[1.4rem] md:mx-[5rem] mt-[2rem] flex flex-col lg:flex-row gap-5 items-start lg:mt-0 mb-[4rem] lg:mb-2 z-[10] relative bg-dark`}
     >
       <div
-        className={`lg:w-[50%] lg:-mt-2 ${
+        className={`lg:w-[50%] lg:-mt-4 ${
           locale === "ar" ? "flex flex-col" : ""
         }`}
       >
-        <h2
-          className={`text-[2rem] md:text-[1.6rem] font-bold mb-3 lg:mb-0 ${
+        <h3
+          style={{ fontFamily: locale === "ar" ? "Zain" : "Outfit" }}
+          className={`text-[2rem] md:text-[1.6rem] font-bold mb-6 lg:mb-0  ${
             locale === "ar"
-              ? "text-right lg:text-[1.6rem] 2xl:text-[1.5rem] font-[zain]"
-              : "lg:text-[1.2rem] 2xl:text-[1rem] mt-[2rem] hidden"
+              ? "text-right lg:text-[1.6rem] 2xl:text-[1.5rem]"
+              : "lg:text-[1.2rem] 2xl:text-[1rem] mt-[2rem]"
           }`}
         >
-          نبذة عنا
-        </h2>
+          {locale === "ar" ? "نبذة عنا" : "About Us"}
+        </h3>
 
         <p
+         dir={locale === "ar" ? "rtl" : ""}
           style={{
             fontFamily: locale === "ar" ? "Zain" : "Outfit",
             fontWeight: "lighter",
           }}
-          className={`text-[2rem] md:text-[1.6rem]  leading-[2.4rem] mb-[4rem]  ${
+          className={`text-[2rem] md:text-[1.6rem] text-justify  leading-[2.4rem] mb-[4rem]  ${
             locale === "ar"
-              ? "text-right lg:mb-[1.5rem] lg:text-[1.5rem] lg:leading-[1.5rem]"
-              : "lg:mb-[2.5rem] lg:text-[1.3rem] lg:leading-[1.3rem] lg:leading-[1.5rem]"
+              ? "text-justify lg:mb-[1.5rem] leading-relaxed lg:text-[1.3rem] 2xl:text-[1.2rem] lg:mt-[0] lg:leading-[1.5rem]"
+              : "lg:mb-[2.5rem] lg:text-[1.2rem] lg:leading-[1.3rem] lg:leading-[1.5rem] lg:mt-[0.5rem]"
           }`}
         >
           {about.aboutDescription}
@@ -83,14 +85,15 @@ const About: React.FC<Props> = ({ className }) => {
         </h3>
 
         <p
+          dir={locale === "ar" ? "rtl" : ""}
           style={{
             fontFamily: locale === "ar" ? "Zain" : "Outfit",
             fontWeight: "lighter",
           }}
-          className={`text-[2rem] md:text-[1.6rem]  leading-[2.4rem] mb-[4rem]  ${
+          className={`text-[2rem] md:text-[1.6rem] text-justify  leading-[2.4rem] mb-[4rem]  ${
             locale === "ar"
-              ? "text-right lg:mb-[1.5rem] lg:text-[1.4rem] 2xl:text-[1.3rem] lg:mt-[0] lg:leading-[1.5rem]"
-              : "lg:mb-[2.5rem] lg:text-[1.3rem] lg:leading-[1.3rem] lg:leading-[1.5rem] lg:mt-[0.5rem]"
+              ? "text-justify lg:mb-[1.5rem] leading-relaxed lg:text-[1.3rem] 2xl:text-[1.2rem] lg:mt-[0] lg:leading-[1.5rem]"
+              : "lg:mb-[2.5rem] lg:text-[1.2rem] lg:leading-[1.3rem] lg:leading-[1.5rem] lg:mt-[0.5rem]"
           }`}
         >
           {about.missionDescription}
@@ -108,14 +111,15 @@ const About: React.FC<Props> = ({ className }) => {
         </h3>
 
         <p
+          dir={locale === "ar" ? "rtl" : ""}
           style={{
             fontFamily: locale === "ar" ? "Zain" : "Outfit",
             fontWeight: "lighter",
           }}
-          className={`text-[2rem] md:text-[1.6rem]  leading-[2.4rem] mb-[4rem]  ${
+          className={`text-[2rem] md:text-[1.6rem] text-justify  leading-[2.4rem] mb-[4rem]  ${
             locale === "ar"
-              ? "text-right lg:mb-[1.5rem] lg:text-[1.4rem] 2xl:text-[1.3rem] lg:mt-[0] lg:leading-[1.5rem]"
-              : "lg:mb-[2.5rem] lg:text-[1.3rem] lg:leading-[1.3rem] lg:leading-[1.5rem] lg:mt-[0.5rem]"
+              ? "text-right lg:mb-[1.5rem] leading-relaxed lg:text-[1.3rem] 2xl:text-[1.2rem] lg:mt-[0] lg:leading-[1.5rem]"
+              : "lg:mb-[2.5rem] lg:text-[1.2rem] lg:leading-[1.3rem] lg:leading-[1.5rem] lg:mt-[0.5rem]"
           }`}
         >
           {about.visionDescription}
