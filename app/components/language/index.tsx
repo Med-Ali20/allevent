@@ -53,7 +53,7 @@ export default function HomePage() {
         <button
           onClick={() => setIsOpen(!isOpen)}
           onKeyDown={handleKeyDown}
-          className="bg-transparent text-white px-3 py-2 rounded focus:outline-none focus:ring-2 focus:ring-blue-500 flex items-center justify-between min-w-[120px] cursor-pointer hover:bg-white/10 transition-colors"
+          className="bg-transparent text-white px-3 py-2 rounded focus:outline-none focus:ring-2 focus:ring-blue-500 flex items-center justify-between w-[90px] md:w-[120px] cursor-pointer hover:bg-white/10 transition-colors"
           aria-haspopup="listbox"
           aria-expanded={isOpen}
         >
