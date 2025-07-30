@@ -10,7 +10,8 @@ export const translations = {
       passion: "",
       services: {
         eventManagement: "Event Management",
-        eventManagementDescription: "Comprehensive event management from concept to completion, we collaborate closely with your team to deliver seamless execution at every stage!",
+        eventManagementDescription:
+          "Comprehensive event management from concept to completion, we collaborate closely with your team to deliver seamless execution at every stage!",
         eventRegisteration: "Event Registration",
         eventRegisterationDescription:
           "From branded digital platforms to check-in systems and on-site support, Allevent ensures seamless registration, check-in, as well as identity verification.",
@@ -186,7 +187,7 @@ P.O. Box 145111
 Riyadh 4545
 Saudi Arabia
 Email: info@allevent.com.sa
-Phone: `,
+Phone: +966555363676`,
 
     contact: {
       title: "Contact",
@@ -288,12 +289,20 @@ Phone: `,
         ],
       },
     },
+    footerCity: "Riyadh 4545",
+    footerCountry: "Saudi Arabia",
+    footerNewsletter: "Join our newsletter",
+    footerEmailPlaceholder: "Your Email Address",
+    footerGetInTouch: "Get in touch",
+    footerTerms: "Terms & Conditions",
+    footerPrivacy: "Privacy Policy",
+    footerCopyright: "Allevent © Copyright 2025",
   },
 
   ar: {
     homepage: {
       impressions:
-        "\u202Bنُبدع في تحويل الأفكار إلى تجارب استثنائية لا تُنسى،\u202C",
+        "\u202Bنُبدع في تحويل الأفكار إلى تجارب استثنائية لا تُنسى، \u202C",
       ideation:
         "\u202Bتترك انطباعًا مميزًا من لحظة التخطيط وحتى التنفيذ.. حيث يتولى فريقنا الإبداعي كل التفاصيل باحترافية.\u202C",
       attention:
@@ -553,4 +562,12 @@ Phone: `,
       },
     },
   },
+  footerCity: "الرياض 4545",
+  footerCountry: "المملكة العربية السعودية",
+  footerNewsletter: "انضم إلى نشرتنا الإخبارية",
+  footerEmailPlaceholder: "عنوان بريدك الإلكتروني",
+  footerGetInTouch: "تواصل معنا",
+  footerTerms: "الشروط والأحكام",
+  footerPrivacy: "سياسة الخصوصية",
+  footerCopyright: "جميع الحقوق محفوظة © 2025 Allevent",
 };

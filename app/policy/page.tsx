@@ -13,27 +13,100 @@ const PrivacyPolicy = () => {
 
   return (
     <div
+      dir={locale === "ar" ? "rtl" : ""}
       className={`pt-40 px-6 md:px-20 text-white  mb-[15rem] relative ${
-        isArabic ? "text-right font-[zain]" : "text-left"
+        isArabic ? "text-justify font-[zain]" : "text-justify"
       }`}
     >
       <section className="max-w-4xl mx-auto space-y-8 leading-relaxed">
         <h1 className="text-3xl font-bold">{t.policy}</h1>
 
         <article className="space-y-4">
-          <p>{t.consent}</p>
-          <p>{t.collect}</p>
-          <p>{t.personalData}</p>
-          <p>{t.analyticsData}</p>
-          <p>{t.consentWithdrawal}</p>
-          <p>{t.dataUsage}</p>
-          <p>{t.dataRetention}</p>
-          <p>{t.externalLinks}</p>
+          <p
+            className={`text-[2rem] md:text-[1.6rem] text-justify  leading-[2.4rem] mb-[4rem]  ${
+              locale === "ar"
+                ? "text-justify lg:mb-[1.5rem] leading-relaxed lg:text-[1.3rem] 2xl:text-[1.2rem] lg:mt-[0] lg:leading-[1.5rem]"
+                : "lg:mb-[2.5rem] lg:text-[1.2rem] lg:leading-[1.3rem] lg:leading-[1.5rem] lg:mt-[0.5rem]"
+            }`}
+          >
+            {t.consent}
+          </p>
+          <p
+            className={`text-[2rem] md:text-[1.6rem] text-justify  leading-[2.4rem] mb-[4rem]  ${
+              locale === "ar"
+                ? "text-justify lg:mb-[1.5rem] leading-relaxed lg:text-[1.3rem] 2xl:text-[1.2rem] lg:mt-[0] lg:leading-[1.5rem]"
+                : "lg:mb-[2.5rem] lg:text-[1.2rem] lg:leading-[1.3rem] lg:leading-[1.5rem] lg:mt-[0.5rem]"
+            }`}
+          >
+            {t.collect}
+          </p>
+          <p
+            className={`text-[2rem] md:text-[1.6rem] text-justify  leading-[2.4rem] mb-[4rem]  ${
+              locale === "ar"
+                ? "text-justify lg:mb-[1.5rem] leading-relaxed lg:text-[1.3rem] 2xl:text-[1.2rem] lg:mt-[0] lg:leading-[1.5rem]"
+                : "lg:mb-[2.5rem] lg:text-[1.2rem] lg:leading-[1.3rem] lg:leading-[1.5rem] lg:mt-[0.5rem]"
+            }`}
+          >
+            {t.personalData}
+          </p>
+          <p
+            className={`text-[2rem] md:text-[1.6rem] text-justify  leading-[2.4rem] mb-[4rem]  ${
+              locale === "ar"
+                ? "text-justify lg:mb-[1.5rem] leading-relaxed lg:text-[1.3rem] 2xl:text-[1.2rem] lg:mt-[0] lg:leading-[1.5rem]"
+                : "lg:mb-[2.5rem] lg:text-[1.2rem] lg:leading-[1.3rem] lg:leading-[1.5rem] lg:mt-[0.5rem]"
+            }`}
+          >
+            {t.analyticsData}
+          </p>
+          <p
+            className={`text-[2rem] md:text-[1.6rem] text-justify  leading-[2.4rem] mb-[4rem]  ${
+              locale === "ar"
+                ? "text-justify lg:mb-[1.5rem] leading-relaxed lg:text-[1.3rem] 2xl:text-[1.2rem] lg:mt-[0] lg:leading-[1.5rem]"
+                : "lg:mb-[2.5rem] lg:text-[1.2rem] lg:leading-[1.3rem] lg:leading-[1.5rem] lg:mt-[0.5rem]"
+            }`}
+          >
+            {t.consentWithdrawal}
+          </p>
+          <p
+            className={`text-[2rem] md:text-[1.6rem] text-justify  leading-[2.4rem] mb-[4rem]  ${
+              locale === "ar"
+                ? "text-justify lg:mb-[1.5rem] leading-relaxed lg:text-[1.3rem] 2xl:text-[1.2rem] lg:mt-[0] lg:leading-[1.5rem]"
+                : "lg:mb-[2.5rem] lg:text-[1.2rem] lg:leading-[1.3rem] lg:leading-[1.5rem] lg:mt-[0.5rem]"
+            }`}
+          >
+            {t.dataUsage}
+          </p>
+          <p
+            className={`text-[2rem] md:text-[1.6rem] text-justify  leading-[2.4rem] mb-[4rem]  ${
+              locale === "ar"
+                ? "text-justify lg:mb-[1.5rem] leading-relaxed lg:text-[1.3rem] 2xl:text-[1.2rem] lg:mt-[0] lg:leading-[1.5rem]"
+                : "lg:mb-[2.5rem] lg:text-[1.2rem] lg:leading-[1.3rem] lg:leading-[1.5rem] lg:mt-[0.5rem]"
+            }`}
+          >
+            {t.dataRetention}
+          </p>
+          <p
+            className={`text-[2rem] md:text-[1.6rem] text-justify  leading-[2.4rem] mb-[4rem]  ${
+              locale === "ar"
+                ? "text-justify lg:mb-[1.5rem] leading-relaxed lg:text-[1.3rem] 2xl:text-[1.2rem] lg:mt-[0] lg:leading-[1.5rem]"
+                : "lg:mb-[2.5rem] lg:text-[1.2rem] lg:leading-[1.3rem] lg:leading-[1.5rem] lg:mt-[0.5rem]"
+            }`}
+          >
+            {t.externalLinks}
+          </p>
         </article>
 
         <article className="space-y-4">
           <h2 className="text-2xl font-semibold">{t.dpoTitle}</h2>
-          <p>{t.dpoContact}</p>
+          <p
+            className={`text-[2rem] md:text-[1.6rem] text-justify  leading-[2.4rem] mb-[4rem]  ${
+              locale === "ar"
+                ? "text-justify lg:mb-[1.5rem] leading-relaxed lg:text-[1.3rem] 2xl:text-[1.2rem] lg:mt-[0] lg:leading-[1.5rem]"
+                : "lg:mb-[2.5rem] lg:text-[1.2rem] lg:leading-[1.3rem] lg:leading-[1.5rem] lg:mt-[0.5rem]"
+            }`}
+          >
+            {t.dpoContact}
+          </p>
         </article>
 
         <h1 className="text-3xl font-bold pt-8">{t.disclaimer}</h1>
@@ -41,33 +114,89 @@ const PrivacyPolicy = () => {
         <article className="space-y-6">
           <div>
             <h2 className="text-2xl font-semibold">{t.liability}</h2>
-            <p>{t.liabilityText}</p>
-            <p>{t.thirdPartyData}</p>
+            <p
+              className={`text-[2rem] md:text-[1.6rem] text-justify  leading-[2.4rem] mb-[4rem]  ${
+                locale === "ar"
+                  ? "text-justify lg:mb-[1.5rem] leading-relaxed lg:text-[1.3rem] 2xl:text-[1.2rem] lg:mt-[0] lg:leading-[1.5rem]"
+                  : "lg:mb-[2.5rem] lg:text-[1.2rem] lg:leading-[1.3rem] lg:leading-[1.5rem] lg:mt-[0.5rem]"
+              }`}
+            >
+              {t.liabilityText}
+            </p>
+            <p
+              className={`text-[2rem] md:text-[1.6rem] text-justify  leading-[2.4rem] mb-[4rem]  ${
+                locale === "ar"
+                  ? "text-justify lg:mb-[1.5rem] leading-relaxed lg:text-[1.3rem] 2xl:text-[1.2rem] lg:mt-[0] lg:leading-[1.5rem]"
+                  : "lg:mb-[2.5rem] lg:text-[1.2rem] lg:leading-[1.3rem] lg:leading-[1.5rem] lg:mt-[0.5rem]"
+              }`}
+            >
+              {t.thirdPartyData}
+            </p>
           </div>
 
           <div>
             <h2 className="text-2xl font-semibold">{t.noWarranties}</h2>
-            <p>{t.noWarrantiesText}</p>
+            <p
+              className={`text-[2rem] md:text-[1.6rem] text-justify  leading-[2.4rem] mb-[4rem]  ${
+                locale === "ar"
+                  ? "text-justify lg:mb-[1.5rem] leading-relaxed lg:text-[1.3rem] 2xl:text-[1.2rem] lg:mt-[0] lg:leading-[1.5rem]"
+                  : "lg:mb-[2.5rem] lg:text-[1.2rem] lg:leading-[1.3rem] lg:leading-[1.5rem] lg:mt-[0.5rem]"
+              }`}
+            >
+              {t.noWarrantiesText}
+            </p>
           </div>
 
           <div>
             <h2 className="text-2xl font-semibold">{t.indemnification}</h2>
-            <p>{t.indemnificationText}</p>
+            <p
+              className={`text-[2rem] md:text-[1.6rem] text-justify  leading-[2.4rem] mb-[4rem]  ${
+                locale === "ar"
+                  ? "text-justify lg:mb-[1.5rem] leading-relaxed lg:text-[1.3rem] 2xl:text-[1.2rem] lg:mt-[0] lg:leading-[1.5rem]"
+                  : "lg:mb-[2.5rem] lg:text-[1.2rem] lg:leading-[1.3rem] lg:leading-[1.5rem] lg:mt-[0.5rem]"
+              }`}
+            >
+              {t.indemnificationText}
+            </p>
           </div>
 
           <div>
             <h2 className="text-2xl font-semibold">{t.fraudWarning}</h2>
-            <p>{t.fraudWarningText}</p>
+            <p
+              className={`text-[2rem] md:text-[1.6rem] text-justify  leading-[2.4rem] mb-[4rem]  ${
+                locale === "ar"
+                  ? "text-justify lg:mb-[1.5rem] leading-relaxed lg:text-[1.3rem] 2xl:text-[1.2rem] lg:mt-[0] lg:leading-[1.5rem]"
+                  : "lg:mb-[2.5rem] lg:text-[1.2rem] lg:leading-[1.3rem] lg:leading-[1.5rem] lg:mt-[0.5rem]"
+              }`}
+            >
+              {t.fraudWarningText}
+            </p>
           </div>
 
           <div>
             <h2 className="text-2xl font-semibold">{t.waiver}</h2>
-            <p>{t.waiverText}</p>
+            <p
+              className={`text-[2rem] md:text-[1.6rem] text-justify  leading-[2.4rem] mb-[4rem]  ${
+                locale === "ar"
+                  ? "text-justify lg:mb-[1.5rem] leading-relaxed lg:text-[1.3rem] 2xl:text-[1.2rem] lg:mt-[0] lg:leading-[1.5rem]"
+                  : "lg:mb-[2.5rem] lg:text-[1.2rem] lg:leading-[1.3rem] lg:leading-[1.5rem] lg:mt-[0.5rem]"
+              }`}
+            >
+              {t.waiverText}
+            </p>
           </div>
 
           <div>
             <h2 className="text-2xl font-semibold">{t.virusProtection}</h2>
-            <p>{t.virusProtectionText}</p>
+            <p
+              className={`text-[2rem] md:text-[1.6rem] text-justify  leading-[2.4rem] mb-[4rem]  ${
+                locale === "ar"
+                  ? "text-justify lg:mb-[1.5rem] leading-relaxed lg:text-[1.3rem] 2xl:text-[1.2rem] lg:mt-[0] lg:leading-[1.5rem]"
+                  : "lg:mb-[2.5rem] lg:text-[1.2rem] lg:leading-[1.3rem] lg:leading-[1.5rem] lg:mt-[0.5rem]"
+              }`}
+            >
+              {t.virusProtectionText}
+            </p>
           </div>
         </article>
         <img

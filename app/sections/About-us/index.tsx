@@ -118,7 +118,7 @@ const About: React.FC<Props> = ({ className }) => {
           }}
           className={`text-[2rem] md:text-[1.6rem] text-justify  leading-[2.4rem] mb-[4rem]  ${
             locale === "ar"
-              ? "text-right lg:mb-[1.5rem] leading-relaxed lg:text-[1.3rem] 2xl:text-[1.2rem] lg:mt-[0] lg:leading-[1.5rem]"
+              ? "text-justify lg:mb-[1.5rem] leading-relaxed lg:text-[1.3rem] 2xl:text-[1.2rem] lg:mt-[0] lg:leading-[1.5rem]"
               : "lg:mb-[2.5rem] lg:text-[1.2rem] lg:leading-[1.3rem] lg:leading-[1.5rem] lg:mt-[0.5rem]"
           }`}
         >
