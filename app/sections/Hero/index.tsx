@@ -17,7 +17,7 @@ export default function HeroSection() {
       {/* 🔹 Video background */}
       <video
         className="absolute top-0 left-0 w-full h-full object-cover"
-        src="https://res.cloudinary.com/dl5zmlqi3/video/upload/v1752259658/hero-compressed_xh1osv.mp4 "
+        src="https://ik.imagekit.io/sbutacla3/hero-compressed.mp4?updatedAt=1754053438135 "
         autoPlay
         muted
         loop
