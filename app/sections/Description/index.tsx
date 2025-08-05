@@ -19,9 +19,9 @@ const index: React.FC<Props> = ({ className }) => {
   return (
     <div
     dir={locale === "ar" ? "rtl" : ""}
-      className={`${className} mx-[1.4rem] md:mx-[5rem] mt-[5rem] mb-[8rem] lg:mb-2 ${locale === 'ar' ? 'text-justify font-[zain]' : 'text-justify' }`}
+      className={`${className} mx-[1.4rem] md:mx-[5rem] mt-[5rem] mb-[8rem] lg:mb-2 ${locale === 'ar' ? 'text-justify font-[zain] text-[2rem] ' : 'text-justify text-[1.5rem]' }`}
     >
-      <h2 className="text-[1.5rem] md:text-[1.7rem] font-bold lg:leading-[2rem]">
+      <h2 className=" md:text-[1.7rem] font-bold lg:leading-[2rem]">
         <span className="text-[#959595]">
           {t.homepage.impressions}
         </span>
